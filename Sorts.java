@@ -11,6 +11,14 @@ public class Sorts {
       }
     }
   }
+  public static void insertionSort(int[] data) {
+    int len = data.length;
+    for (int i = 0; i < len - 1; i++) {
+      int store = data[i];
+      int j = i;
+      while (j >= )
+    }
+  }
   public void printArray(int[] data) {
     int len = data.length;
     for (int i = 0; i < len; i++) {
