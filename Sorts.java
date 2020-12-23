@@ -24,16 +24,19 @@ public class Sorts {
     }
   }
   public static void selectionSort(int[] data) {
-    int store;
-    for (i = 0; i < n - 1; i++) {
-      store = i;
-      for (j = i + 1; j < n; j++) {
-        if (data[j] < data[store]) {
-          store = j;
+    int n = data.length;
+      for (int i = 0; i < n-1; i++) {
+        int store = i;
+          for (int j = i+1; j < n; j++) {
+            if (data[j] < data[store]) {
+              store = j;
+            }
+            int temp = data[store];
+            data[store] = data[i];
+            data[i] = temp;
+          }
         }
       }
-      swap(&data[store], &data[i]);
-  }
   public void printArray(int[] data) {
     int len = data.length;
     for (int i = 0; i < len; i++) {
