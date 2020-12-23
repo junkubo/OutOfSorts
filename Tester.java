@@ -6,15 +6,17 @@ public class Tester {
     int data3[] = {1, 3, 3, 3, 2, 2, 5, 5, 5, 5, 5, 4, 4, 4, 4};
     int data4[] = {};
     Sorts sorter = new Sorts();
-    sorter.bubbleSort(data);
+    sorter.insertionSort(data);
     sorter.printArray(data);
-    sorter.bubbleSort(data1);
+    sorter.insertionSort(data1);
     sorter.printArray(data1);
-    sorter.bubbleSort(data2);
+    sorter.insertionSort(data2);
     sorter.printArray(data2);
-    sorter.bubbleSort(data3);
+    sorter.insertionSort(data3);
     sorter.printArray(data3);
-    sorter.bubbleSort(data4);
+    sorter.insertionSort(data4);
     sorter.printArray(data4);
+
+
   }
 }
